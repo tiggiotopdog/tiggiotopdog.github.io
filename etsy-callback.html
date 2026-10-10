@@ -1,0 +1,8 @@
+<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex"><title>Connecting…</title>
+<p>Finishing Etsy sign-in on your computer…</p>
+<p>If nothing happens in a few seconds, copy this page's full address from the address bar and paste it in the Project Green controller under Settings → Etsy → "Paste sign-in link".</p>
+<script>
+// Hands the one-time Etsy code back to the Project Green controller running on this computer.
+// The code is useless without the secret verifier that only the controller holds.
+location.replace("http://127.0.0.1:4317" + '/etsy/callback' + location.search);
+</script>
